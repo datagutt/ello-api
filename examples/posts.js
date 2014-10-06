@@ -6,10 +6,10 @@ Ello.login(username, password, function(err, ello){
 	if(err){
 		console.log(err);
 	}
-	//ello.getUser('datagutt', function(err, user){
-	//	console.log(user);
-	//});
-	ello.say('text', 'howdy', function(err, result){
+	ello.getUser('datagutt', function(err, user){
+		console.log(user);
+	});
+	ello.say('howdy', function(err, result){
 		console.log(err, result)
 	})
 });
